@@ -69,7 +69,7 @@ const [countGoogleAds, setCountGoogleAds] = useState(0);
               <p className="text text-white">Your service or product will appear at the top of the Google search.</p>
               <div className="button-container d-flex flex-column">
                     <button className="badge bg-light text-black mb-2" onClick={() => setCountGoogleAds(countGoogleAds + 25)}>Hour rate $25/hr</button>
-                    <button class="badge bg-light text-black mb-0" onClick={() => setCountGoogleAds(countGoogleAds - 25)} disabled={countGoogleAds === 0}>Delete service</button>
+                    <button className="badge bg-light text-black mb-0" onClick={() => setCountGoogleAds(countGoogleAds - 25)} disabled={countGoogleAds === 0}>Delete service</button>
               </div>
             </div>
           </div>
