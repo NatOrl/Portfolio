@@ -12,6 +12,10 @@ const [countDes, setCountDes] = useState(0);
 const [countFbAdds, setCountFbAdds] = useState(0);
 const [countGoogleAds, setCountGoogleAds] = useState(0);
 
+const [totalClicksWeb, setTotalClicksWeb] = useState(0);
+const [totalClicksDes, setTotalClicksDes] = useState(0);
+const [totalClicksAdds, setTotalClicksAdds] = useState(0);
+const [totalClicksGoogleAdds, setTotalClicksGoogleAdds] = useState(0);
 
   return (
     <div id="services" className="services">
@@ -25,10 +29,10 @@ const [countGoogleAds, setCountGoogleAds] = useState(0);
               <div className="circle"><FontAwesomeIcon className="icon" icon={faDesktop} size="2x" /></div>
               <h3 className="title text-white">Web Design</h3>
               <p className="text text-white">I approach each project individually and always focus on the result.</p>
-    
+              <h5 className="text-hours text-white mb-0 ">total hours: {totalClicksWeb}</h5>
               <div className="button-container d-flex flex-column">
-                    <button className="badge bg-light text-black mb-2" onClick={() => setCountWeb(countWeb + 10)}>Hour rate $10/hr</button>
-                    <button className="badge bg-light text-black mb-0" onClick={() => setCountWeb(countWeb - 10)} disabled={countWeb === 0}>Delete service</button>
+                    <button className="badge bg-light text-black mb-2" onClick={() => {setCountWeb(countWeb + 10), setTotalClicksWeb(totalClicksWeb + 1)}}>Hour rate $10/hr</button>
+                    <button className="badge bg-light text-black mb-0" onClick={() => {setCountWeb(countWeb - 10), setTotalClicksWeb(totalClicksWeb - 1)}} disabled={countWeb === 0}>Delete service</button>
               </div>
             </div>
           </div>
@@ -39,10 +43,10 @@ const [countGoogleAds, setCountGoogleAds] = useState(0);
 
               <h3 className="title text-white" >Web Development</h3>
               <p className="text text-white">Your website will be build with an new proven technologies.</p>
-    
+              <h5 className="text-hours text-white mb-0">total hours: {totalClicksDes}</h5>
               <div className="button-container d-flex flex-column">
-                    <button className="badge bg-light text-black mb-2" onClick={() => setCountDes(countDes + 15)}>Hour rate $15/hr</button>
-                    <button className="badge bg-light text-black mb-0" onClick={() => setCountDes(countDes - 15)} disabled={countDes === 0}>Delete service</button>
+                    <button className="badge bg-light text-black mb-2" onClick={() => {setCountDes(countDes + 15), setTotalClicksDes(totalClicksDes + 1)}}>Hour rate $15/hr</button>
+                    <button className="badge bg-light text-black mb-0" onClick={() => {setCountDes(countDes - 15), setTotalClicksDes(totalClicksDes - 1)}} disabled={countDes === 0}>Delete service</button>
               </div>
             </div>
           </div>
@@ -53,10 +57,10 @@ const [countGoogleAds, setCountGoogleAds] = useState(0);
 
               <h3 className="title text-white">Facebook Ads SMM</h3>
               <p className="text text-white">Your potential clients well see your services or product on Facebook</p>
-
+              <h5 className="text-hours text-white mb-0">total hours: {totalClicksAdds}</h5>
               <div className="button-container d-flex flex-column">
-                    <button className="badge bg-light text-black mb-2" onClick={() => setCountFbAdds(countFbAdds + 20)}>Hour rate $20/hr</button>
-                    <button className="badge bg-light text-black mb-0" onClick={() => setCountFbAdds(countFbAdds - 20)} disabled={countFbAdds === 0}>Delete service</button>
+                    <button className="badge bg-light text-black mb-2" onClick={() => {setCountFbAdds(countFbAdds + 20), setTotalClicksAdds(totalClicksAdds + 1)}}>Hour rate $20/hr</button>
+                    <button className="badge bg-light text-black mb-0" onClick={() => {setCountFbAdds(countFbAdds - 20), setTotalClicksAdds(totalClicksAdds - 1)}} disabled={countFbAdds === 0}>Delete service</button>
               </div>
             </div>
           </div>
@@ -67,9 +71,10 @@ const [countGoogleAds, setCountGoogleAds] = useState(0);
 
               <h3 className="title text-white">Google Ads</h3>
               <p className="text text-white">Your service or product will appear at the top of the Google search.</p>
+              <h5 className="text-hours text-white mb-0">total hours: {totalClicksGoogleAdds}</h5> 
               <div className="button-container d-flex flex-column">
-                    <button className="badge bg-light text-black mb-2" onClick={() => setCountGoogleAds(countGoogleAds + 25)}>Hour rate $25/hr</button>
-                    <button className="badge bg-light text-black mb-0" onClick={() => setCountGoogleAds(countGoogleAds - 25)} disabled={countGoogleAds === 0}>Delete service</button>
+                    <button className="badge bg-light text-black mb-2" onClick={() => {setCountGoogleAds(countGoogleAds + 25), setTotalClicksGoogleAdds(totalClicksGoogleAdds + 1)}}>Hour rate $25/hr</button>
+                    <button className="badge bg-light text-black mb-0" onClick={() => {setCountGoogleAds(countGoogleAds - 25), setTotalClicksGoogleAdds(totalClicksGoogleAdds -1)}} disabled={countGoogleAds === 0}>Delete service</button>
               </div>
             </div>
           </div>
