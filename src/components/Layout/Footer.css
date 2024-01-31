@@ -1,0 +1,26 @@
+.footer {
+  color: rgb(230, 230, 230);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  padding: 5px;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  cursor:pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+@media(max-width: 770px) {
+  .footer-info { 
+    padding-bottom: 1rem;
+  }
+}
