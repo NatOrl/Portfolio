@@ -1,0 +1,42 @@
+.projects {
+  text-align: center;
+}
+
+
+.circle {
+  position: relative;
+  margin: 0.4rem auto;
+  background: rgb(64, 21, 221);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+.projects h1 {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.projects .box {
+  height: 40rem;
+  /* width: 20rem; */
+  padding: 0.625rem;
+  margin-bottom: 1.875rem;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(15, 119, 112) ;
+  transition: 0.3s ease-in-out;
+}
+
+.projects .box:hover {
+  background: #61dafbaa;
+  border-bottom: 0.3125rem solid transparent;
+  cursor: pointer;
+}
+
+.projects .box p {
+  font-size: 1.3rem;
+}

@@ -48,7 +48,8 @@
 }
 
 .link-cv:hover {
-  color: rgba(206, 14, 214, 1) !important; /* Color on hover */
+  color: rgba(206, 14, 214, 1) !important;
+  cursor: pointer;
 }
 
 @media(max-width: 991px) {

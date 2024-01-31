@@ -19,9 +19,9 @@ const [totalClicksGoogleAdds, setTotalClicksGoogleAdds] = useState(0);
 
   return (
     <div id="services" className="services">
-      <h1 className="py-5">my services</h1>
-      <h3 className="title text-white">Total Hour Rate</h3>
-      <h3 className="text-white mb-4">$ {countWeb + countDes + countFbAdds + countGoogleAds}/hour</h3>
+      <h1 className="py-5 mb-2">my offers</h1>
+      <h3 className="title text-white mb-3">Total Price for Selected Offers</h3>
+      <h3 className="text-white mb-5">$ {countWeb + countDes + countFbAdds + countGoogleAds}</h3>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6 col-sm-6">
@@ -55,8 +55,8 @@ const [totalClicksGoogleAdds, setTotalClicksGoogleAdds] = useState(0);
             <div className="box">
               <div className="circle"><FontAwesomeIcon className="icon" icon={faFacebookF} size="2x" /></div>
 
-              <h3 className="title text-white">Facebook Ads SMM</h3>
-              <p className="text text-white">Your potential clients well see your services or product on Facebook</p>
+              <h3 className="title text-white">Facebook Ads</h3>
+              <p className="text text-white">Your potential clients well see your services or product on Facebook.</p>
               <h5 className="text-hours text-white mb-0">total hours: {totalClicksAdds}</h5>
               <div className="button-container d-flex flex-column">
                     <button className="badge bg-light text-black mb-2" onClick={() => {setCountFbAdds(countFbAdds + 20), setTotalClicksAdds(totalClicksAdds + 1)}}>Hour rate $20/hr</button>

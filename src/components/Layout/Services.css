@@ -77,6 +77,7 @@
 .badge:hover {
   background-color: #646cffaa !important;
   color: white !important;
+  cursor: pointer;
 }
 
 @media(max-width: 750px) {
