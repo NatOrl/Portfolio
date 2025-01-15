@@ -23,7 +23,7 @@ const Contacts = () => {
         description: data.description
       },
       userID
-    )
+    );
     r.target.reset();
   }
 
@@ -90,7 +90,8 @@ const Contacts = () => {
                   className="form-control"
                   placeholder="Email"
                   name="email"
-                  {...register("email", {required: "Please provide you email",
+                  {...register("email", 
+                  {required: "Please provide you email",
                       pattern: {
                         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                         message: "invalid Email"
@@ -130,9 +131,8 @@ const Contacts = () => {
                   placeholder="Please describe shortly you project..."
                   name="description"
                   {...register("description", {
-                      required: "Please describe shortly your project needs...",
-                    })
-                  }
+                    required: "Please describe shortly your project needs...",
+                  })}
                 ></textarea>
                 <div className="line"></div>
               </div>

@@ -1,12 +1,12 @@
 .header-wrapper { 
   position: relative;
-  background: url(background.jpg) no-repeat;
+  /* background: url(./background.jpg) no-repeat; */
   background-size: cover;
   background-position: center;
   height: 70vh;
 }
 
-.header-wrapper::before {
+.heawder-wrapper::before {
   content: "";
   position: absolute;
   top: 0;

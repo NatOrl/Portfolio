@@ -24,7 +24,7 @@ function App() {
           <NavbarComponent />
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/projects" element={<PortfolioPage/>} />
             <Route path='/contactpage' element={<ContactPage/>} />
           </Routes>
           <Footer />
